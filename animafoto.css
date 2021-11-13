@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.inicio {
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    position: relative;
+}
+
+.inicio h2 {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    line-height: 100vh;
+    font-size: 10vh;
+}
+
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.banner .blocks {
+    position: relative;
+    display: block;
+    width: 5vw;
+    height: 5vw;
+    background: #fff;
+    animation: primera .75s ease-in-out forwards;
+}
+
+@keyframes primera {
+    0% {
+        opacity: 0;
+        transform: scale(0) translateY(1000px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0px);
+    }
+}
