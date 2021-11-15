@@ -7,4 +7,5 @@ window.addEventListener('load', function() {
         banner.innerHTML += "<div class = 'blocks'></div>";
         blocks[i].style.animationDelay = `${i * 0.05}s`;
     }
+
 })
