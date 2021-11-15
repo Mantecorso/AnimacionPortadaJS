@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.inicio {
+    width: 100%;
+    height: 100vh;
+   /*  background-color: rgb(231, 43, 74); */
+    position: relative;
+    overflow: hidden;
+}
+
+.inicio h2 {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    line-height: 100vh;
+    font-size: 10vh;
+    z-index: 10;
+    -webkit-box-reflect: below -40px linear-gradient(transparent,#0004);
+}
+
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner .blocks {
+    position: relative;
+    display: block;
+    width: 5vw;
+    height: 5vh;
+    /* background: #fff; */
+    animation: primera .5s ease-in-out forwards;
+}
+
+.banner .blocks:nth-child(even) {
+    animation: primera 0.7s ease-in-out forwards;
+}
+
+.banner .blocks:nth-child(7n+3) {
+    animation: primera 1.25s ease-in-out forwards;
+}
+
+.banner .blocks:nth-child(7n+7) {
+    animation: primera 1s ease-in-out forwards;
+}
+
+.extra {
+    width: 100%;
+    height: 100vh;
+    background: rgb(28, 236, 132);
+}
+
+@keyframes primera {
+    0% {
+        opacity: 0;
+        transform: scale(0) translateY(1000px);
+    }
+    50% {
+        opacity: 1;
+        background: url(../LuisJuradoQ/images/luis-1024x1024.jpg);
+        background-position: center;
+        background-size: 700px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0px);
+        background: url(../LuisJuradoQ/images/luis-1024x1024.jpg);
+        background-position: center;
+        background-size: 700px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}
+
+
+h2 span {
+    animation: anione 5s linear infinite;
+}
+
+h2 span:nth-child(even) {
+    animation-delay: .4s;
+    
+}
+
+@keyframes anione {
+    0%, 18%, 20%, 50.1%, 60%, 65%, 80.1%, 90%, 92% {
+        color: rgb(64, 64, 163);
+        text-shadow: none;
+    }
+    18.1%, 20.1%, 50%, 60.1%, 65.1%, 80%, 90.1%, 92.1%, 100% {
+        color: white;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4,
+        0 0 400px #03bcf4;
+    }
+}
+
+#video_background {
+
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+    }
+
+    #logo {
+        position: absolute;
+        top: 70%;
+        left: 47%;
+        width: 100px;
+        background-color: white;
+        z-index: 11;
+        cursor: pointer;
+    }
+
+    #logo:hover {
+        background-color: rgb(64, 64, 163);
+        box-shadow: 10px 10px 10px white;
+    }
+    
+.slide-in-bck-top {
+	-webkit-animation: slide-in-bck-top 1.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bck-top 1.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-bck-top {
+    0% {
+      -webkit-transform: translateZ(700px) translateY(-300px);
+              transform: translateZ(700px) translateY(-300px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-bck-top {
+    0% {
+        -webkit-transform: translateZ(700px) translateY(-300px);
+                transform: translateZ(700px) translateY(-300px);
+        opacity: 0;
+      }
+    2%, 18%, 20%, 50.1%, 60%, 65%, 80.1%, 90%, 92% {
+        background-color: rgb(64, 64, 163);
+        box-shadow: none;
+
+    }
+    18.1%, 20.1%, 50%, 60.1%, 65.1%, 80%, 90.1%, 92.1%, 100% {
+        background-color: white;
+        box-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4,
+        0 0 400px #03bcf4;
+    }
+
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
